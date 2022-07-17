@@ -6,7 +6,7 @@ services:
     image: "kali"
     build: .
     volumes:
-      - ./scripts:/home/scripts
+      - .:/home/
     ports:
       - "8181:8080"
     command: tail -f /dev/null
